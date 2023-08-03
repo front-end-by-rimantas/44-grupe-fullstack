@@ -1,0 +1,20 @@
+{
+    "name": "44-grupe-fullstack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npm-run-all --parallel client server",
+        "dev2": "npm-run-all --parallel client:dev server:dev",
+        "client": "cd ./client && npm start",
+        "server": "cd ./server && npm run dev",
+        "server:dev": "npm --prefix ./server/ run dev",
+        "client:dev": "npm --prefix ./client/ run start"
+    },
+    "keywords": [],
+    "author": "Rimantas (https://github.com/belauzas)",
+    "license": "MIT",
+    "dependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}
